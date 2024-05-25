@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+}
+
+a,
+p,
+link,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto";
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 90px;
+  margin-bottom: 180px;
+}
+
+.hero__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.hero__input {
+  max-width: 100%;
+  padding: 16px 48px 16px 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 32px;
+  transition: all 0.3s ease;
+}
+
+.hero__input:focus {
+  border: 3px solid #a9d3e9;
+  outline: none;
+}
+
+.hero__gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 312px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+  margin-bottom: 32px;
+  border-radius: 5px;
+}
+
+.gallery__title {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.87);
+  align-self: start;
+  margin-top: 12px;
+  padding: 0 16px 0;
+}
+
+.gallery__text {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+  align-self: start;
+  font-weight: 400;
+  margin-top: 1px;
+  padding: 0 16px 0;
+  margin-bottom: 12px;
+}
+
+.rick {
+  max-width: 100%;
+  border-radius: 5px 5px 0 0;
+}
