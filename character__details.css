@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+}
+
+a,
+p,
+link,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto";
+}
+
+a,
+link,
+li,
+ol,
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+.back__div {
+  display: flex;
+}
+
+.back {
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding-top: 25px;
+  padding-left: 8px;
+  margin-bottom: 77px;
+}
+
+.icon__search {
+  padding-left: 24px;
+  padding-top: 23px;
+}
+
+.hero__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 32px;
+}
+
+.rick__logo {
+  stroke: 5px #f2f2f7;
+  padding-bottom: 34px;
+}
+
+.hero__title {
+  font-size: 32px;
+  color: #081f32;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.details__info {
+  padding-left: 30px;
+}
+
+.details__title__main {
+  font-size: 20px;
+  color: #8e8e93;
+  font-weight: normal;
+  padding-left: 25px;
+}
+
+.details__title {
+  font-size: 16px;
+  color: #081f32;
+  font-weight: bold;
+  line-height: 24px;
+  margin-top: 5px;
+}
+
+hr {
+  width: 298px;
+  height: 0.8px;
+  background-color: rgba(50, 50, 50, 0.106);
+  border: none;
+}
+
+.details__text {
+  font-size: 14px;
+  color: #6e798c;
+  line-height: 20px;
+}
