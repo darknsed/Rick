@@ -41,7 +41,7 @@ ul {
   font-weight: bold;
   padding-top: 25px;
   padding-left: 8px;
-  margin-bottom: 77px;
+  margin-bottom: 32px;
 }
 
 .icon__search {
@@ -59,17 +59,20 @@ ul {
 
 .rick__logo {
   stroke: 5px #f2f2f7;
-  padding-bottom: 34px;
+  padding-bottom: 4px;
 }
 
 .hero__title {
-  font-size: 32px;
+  font-size: 48px;
   color: #081f32;
 }
 
 .details {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
 }
 
 .details__info {
@@ -80,7 +83,9 @@ ul {
   font-size: 20px;
   color: #8e8e93;
   font-weight: normal;
-  padding-left: 25px;
+
+  padding-top: 48px;
+  padding-bottom: 65px;
 }
 
 .details__title {
@@ -102,4 +107,32 @@ hr {
   font-size: 14px;
   color: #6e798c;
   line-height: 20px;
+}
+
+@media screen and (max-width: 450px) {
+  .rick__logo {
+    width: 150px;
+    height: 150px;
+    padding-bottom: 34px;
+  }
+
+  .hero__title {
+    font-size: 32px;
+  }
+
+  .details__info {
+    align-self: start;
+  }
+
+  .details__title__main {
+    font-size: 20px;
+    padding: 0 0 0 0;
+    align-self: start;
+    padding-left: 25px;
+  }
+
+  .details__title {
+    font-size: 16px;
+    margin-top: 5px;
+  }
 }

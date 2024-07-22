@@ -41,7 +41,10 @@ h6 {
 
 .hero__input {
   max-width: 100%;
-  padding: 16px 145px 16px 16px;
+  padding-left: 48px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 600px;
   border: 2px solid #ccc;
   border-radius: 4px;
   margin-top: 32px;
@@ -58,22 +61,36 @@ h6 {
   outline: none;
 }
 
-.hero__gallery {
+.gallery {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero__gallery {
   max-width: 312px;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.16);
-  margin-bottom: 32px;
   border-radius: 5px;
+  margin-right: 20px;
+  margin-bottom: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero__gallery:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.16);
 }
 
 .hero__icon {
   position: absolute;
-  padding-right: 270px;
+  padding-right: 730px;
   padding-top: 153px;
-  pointer-events: none;
+  /* transition: 0.3s all ease-in-out; */
 }
+
+/* .hero__icon:hover {
+  display: none;
+} */
 
 .gallery__title {
   font-size: 20px;
@@ -96,4 +113,35 @@ h6 {
 .rick {
   max-width: 100%;
   border-radius: 5px 5px 0 0;
+}
+
+@media screen and (max-width: 450px) {
+  .hero__input {
+    padding: 16px 145px 16px 16px;
+    border-radius: 4px;
+    margin-top: 32px;
+    transition: all 0.3s ease;
+  }
+
+  .hero__gallery {
+    display: none;
+    margin: 0;
+    margin-bottom: 32px;
+  }
+
+  .gallery {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  #one,
+  #two {
+    display: block;
+  }
+
+  .hero__icon {
+    position: absolute;
+    padding-right: 270px;
+    padding-top: 153px;
+    pointer-events: none;
+  }
 }
